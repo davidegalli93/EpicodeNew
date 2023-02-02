@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+.corpo{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+
+#logo{
+    width: 200px;
+    margin: 1rem 0;
+}
