@@ -3,7 +3,6 @@
 
 html,
 body {
-    text-align: center;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -23,6 +22,10 @@ h6 {
     line-height: 1.5;
 }
 
+main {
+    text-align: center;
+}
+
 header {
     background-color: black;
     padding: 20px;
@@ -30,11 +33,12 @@ header {
 
 header img {
     width: 150px;
+    text-align: left;
 }
 
 #Titolo {
     background-image: url(../images/banner.jpg);
-    padding: 40px 20px;
+    padding: 100px 200px;
     background-size: cover;
 }
 
@@ -48,11 +52,12 @@ header img {
 }
 
 #Primo {
-    padding: 40px 0;
+    padding: 20px;
+    display: inline-block;
 }
 
 .Primogruppo {
-    padding: 10px 20px;
+    display: inline-block;
 }
 
 #imgnb {
