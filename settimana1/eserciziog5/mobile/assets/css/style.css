@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html,
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+#Titolo {
+    background-image: url(../images/banner.jpg);
+    padding: 40px 20px;
+    background-size: cover;
+}
+
+#partiamo a {
+    background-color: #f04c2f;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+#Primo {
+    padding: 40px 0;
+}
+
+.Primogruppo {
+    padding: 10px 20px;
+}
+
+#imgnb {
+    border-radius: 50%
+}
+
+#arancione {
+    background-color: #e22d0e;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#arancione h2 {
+    color: white;
+}
+
+#arancione p {
+    font-size: medium;
+}
+
+.istruzioni {
+    max-width 400px;
+    margin: 0 20px 40px;
+    border: 1px solid #dee1e3;
+    box-sizing: border-box;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: margin 20px;
+}
+
+.istruzioni img {
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+footer {
+    background-color: #25a2c3;
+    color: white;
+    padding: 20px;
+    font-size: medium;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer hr {
+    width: 50%;
+}
+
+
+.istruzioni img {
+    width: 100%;
+    height: 100%;
+}
