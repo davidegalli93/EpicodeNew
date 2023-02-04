@@ -9,6 +9,7 @@ body {
     color: #393d41;
     font-size: 1.2rem;
     line-height: 1.65;
+    text-align: center;
 }
 
 h1,
@@ -22,18 +23,14 @@ h6 {
     line-height: 1.5;
 }
 
-main {
-    text-align: center;
-}
-
 header {
     background-color: black;
     padding: 20px;
+    text-align: left;
 }
 
 header img {
     width: 150px;
-    text-align: left;
 }
 
 #Titolo {
@@ -51,49 +48,60 @@ header img {
     font-size: 20px;
 }
 
-#Primo {
+#PrimaSequenza {
+    border: 1px white;
+    width: 90%;
+    margin: 40px;
     padding: 20px;
+}
+
+#Primogruppo {
+    font-size: small;
+    text-align: left;
     display: inline-block;
+    width: 48%;
 }
 
-.Primogruppo {
+#imgPS {
     display: inline-block;
+    width: 50%;
 }
 
-#imgnb {
-    border-radius: 50%
+#imgPS img {
+    border-radius: 50%;
+    width: 300px;
 }
 
-#arancione {
+#BloccoArancione {
     background-color: #e22d0e;
     color: white;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
-#arancione h2 {
+#BloccoArancione h2 {
     color: white;
 }
 
-#arancione p {
+#BloccoArancione p {
     font-size: medium;
 }
 
 .istruzioni {
-    max-width 400px;
-    margin: 0 20px 40px;
+    width: 25%;
+    height: 100%;
+    margin: 0px 10px 60px 10px;
+    padding: 0 0 10px 0;
     border: 1px solid #dee1e3;
-    box-sizing: border-box;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     border-bottom: margin 20px;
+    display: inline-block;
+    font-size: small;
 }
 
 .istruzioni img {
-    width: 50%;
-    height: 50%;
-    max-width: 500px;
-    max-height: 400px;
+    width: 100%;
 }
 
 footer {
@@ -101,6 +109,11 @@ footer {
     color: white;
     padding: 20px;
     font-size: medium;
+    text-align: left;
+}
+
+#TestoFooter {
+    margin: 0 40%;
 }
 
 footer h2 {
@@ -109,14 +122,4 @@ footer h2 {
 
 footer a {
     color: white;
-}
-
-footer hr {
-    width: 50%;
-}
-
-
-.istruzioni img {
-    width: 100%;
-    height: 100%;
 }
