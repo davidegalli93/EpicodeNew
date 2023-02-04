@@ -74,14 +74,16 @@ header img {
     font-size: medium;
 }
 
+#secondoblocco {
+    width: 80%;
+    margin: 10%;
+}
+
 .istruzioni {
-    max-width 400px;
-    margin: 0 20px 40px;
+    margin: 0 0 20px 0;
     border: 1px solid #dee1e3;
-    box-sizing: border-box;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-bottom: margin 20px;
 }
 
 .istruzioni img {
