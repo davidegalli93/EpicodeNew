@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,
+body {
+    background-color: #415fe1;
+    color: white;
+    margin: 0 40px;
+    padding: 0 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#LogoJS img {
+    width: 200px;
+    display: block;
+}
+
+#LogoJS :hover{
+    color: white;
+}
