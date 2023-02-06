@@ -1,11 +1,11 @@
 var pantera = 'pantera';
 document.write(pantera + ' scritto da Javscript');
 
-var coniglio = 'coniglio';
-console.log(coniglio);
+var coni_glio = 'coniglio';
+console.log(coni_glio);
 
-var leone = 'leone';
-console.log(leone);
+var leoneBianco = 'leone';
+console.log(leoneBianco);
 
-var zebra = 'zebra';
-console.log(zebra);
+var zebraverde = 'zebra';
+console.log(zebraverde);
