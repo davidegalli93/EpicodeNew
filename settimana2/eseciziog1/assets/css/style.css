@@ -9,11 +9,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#LogoJS img {
+#logoJS img {
     width: 200px;
     display: block;
 }
 
-#LogoJS :hover{
-    color: white;
+#logoJS :hover{
+    color: yellow;
+}
+
+#logoJS a:link{
+    text-decoration: none; 
 }
