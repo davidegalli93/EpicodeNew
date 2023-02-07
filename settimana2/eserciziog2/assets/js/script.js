@@ -1,3 +1,5 @@
+//Esercizio 1
+
 var aldo = 'Aldo';
 const pgreco = '3.14';
 
@@ -5,12 +7,14 @@ const pgreco = '3.14';
     let cliente = 'cliente';
     document.getElementById('concatena').innerHTML = aldo + ', ' + cliente + ', ' + pgreco;
 
+    //Esercizio 2
     var esercizio2 = aldo + ', ' + cliente + ', ' + pgreco;
     document.getElementById('concatena2').innerHTML = esercizio2;
 }
 
-var nome1 = 'Mario';
+//Esercizio 3
 
+var nome1 = 'Mario';
 {
     let nome1 = 'Carla';
     document.getElementById('let').innerHTML = nome1;
@@ -22,6 +26,7 @@ document.getElementById('var').innerHTML = nome1;
 document.getElementById('final').innerHTML = nome1;
 document.getElementById('let2').innerHTML = nome1;
 
+//Esercizio 4
 
 var iniziale = 15;
 var addizione = iniziale + iniziale;
