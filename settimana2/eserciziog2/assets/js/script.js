@@ -3,9 +3,9 @@ const pgreco = '3.14';
 
 {
     let cliente = 'cliente';
-    document.getElementById('concatena').innerHTML = aldo + ' ' + cliente + ' ' + pgreco;
+    document.getElementById('concatena').innerHTML = aldo + ', ' + cliente + ', ' + pgreco;
 
-    var esercizio2 = aldo + ' ' + cliente + ' ' + pgreco;
+    var esercizio2 = aldo + ', ' + cliente + ', ' + pgreco;
     document.getElementById('concatena2').innerHTML = esercizio2;
 }
 
@@ -24,8 +24,8 @@ document.getElementById('let2').innerHTML = nome1;
 
 
 var iniziale = 15;
-var addizione = 30;
-var sottrazione = 5;
+var addizione = iniziale + iniziale;
+var sottrazione = iniziale - 10;
 document.getElementById('iniziale').innerHTML += iniziale;
 document.getElementById('valore1').innerHTML += addizione + ', ' + ++addizione;
 document.getElementById('valore2').innerHTML += sottrazione + ', ' + --sottrazione;
