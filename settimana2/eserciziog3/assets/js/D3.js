@@ -175,7 +175,7 @@ document.getElementById('es11').innerHTML = me.name + ' ' + me.lastName + ' ' + 
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-delete me.lastName;
+me.lastName= ' ';
 
 document.getElementById('es12').innerHTML = me.name + ' ' + me.lastName + ' ' + me.skills + ' ' + me.city;
 
