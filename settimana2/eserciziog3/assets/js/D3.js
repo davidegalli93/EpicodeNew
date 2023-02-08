@@ -191,16 +191,17 @@ document.getElementById('es13').innerHTML = me.name + ' ' + me.lastName + ' ' + 
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-var inter=[];
-inter.push('1,2,3,4,5,6,7,8,9,10')
+var prova14=[];
+prova14.push('1','2','3','4','5','6','7','8','9','10')
 
-document.getElementById('es14').innerHTML = inter;
+document.getElementById('es14').innerHTML = prova14;
 
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-inter.splice (9,1,'100');
+prova14.splice (9, 1,'100');
+document.getElementById('es15').innerHTML = prova14;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
