@@ -43,11 +43,10 @@ if (numero == 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro 
   addizione/sottrazione sia uguale a 8.
 */
-var numero = (0 + 0);
-var numero1 = (0 - 0);
-var numero2 = 0;
+var numero = 2;
+var numero1 = 7;
 
-if ((numero) || (numero1) || (numero2) == 8) {
+if (numero === 8 || numero1 === 8 || numero + numero1 === 8 || numero - numero1 === 8 || numero1 - numero === 8) {
   document.getElementById('es4').innerHTML = 'uguale a 8';
 } else {
   document.getElementById('es4').innerHTML = ' non uguale a 8';
@@ -119,9 +118,9 @@ if (numero > numero1 > numero2) {
 
 var numero = 5;
 
-if(typeof(numero)==='number'){
-document.getElementById('es8').innerHTML = 'è un numero';
-} else{
+if (typeof (numero) === 'number') {
+  document.getElementById('es8').innerHTML = 'è un numero';
+} else {
   document.getElementById('es8').innerHTML = 'non è un numero';
 }
 
@@ -134,9 +133,9 @@ document.getElementById('es8').innerHTML = 'è un numero';
 
 var numero = 7;
 
-if(numero%2 ==0){
+if (numero % 2 == 0) {
   document.getElementById('es9').innerHTML = 'pari';
-} else{
+} else {
   document.getElementById('es9').innerHTML = 'dispari';
 }
 
@@ -145,14 +144,14 @@ if(numero%2 ==0){
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   */
 
-  let val = 7;
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
+let val = 7;
+if (val < 5) {
+  document.getElementById('es10').innerHTML = 'Meno di 5';
+} else if (val < 10) {
+  document.getElementById('es10').innerHTML = 'Meno di 10';
+} else {
+  document.getElementById('es10').innerHTML = 'Uguale a 10 o maggiore';
+}
 
 
 
@@ -175,7 +174,7 @@ document.getElementById('es11').innerHTML = me.name + ' ' + me.lastName + ' ' + 
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-me.lastName= ' ';
+me.lastName = ' ';
 
 document.getElementById('es12').innerHTML = me.name + ' ' + me.lastName + ' ' + me.skills + ' ' + me.city;
 
@@ -191,8 +190,8 @@ document.getElementById('es13').innerHTML = me.name + ' ' + me.lastName + ' ' + 
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-var prova14=[];
-prova14.push('1','2','3','4','5','6','7','8','9','10')
+var prova14 = [];
+prova14.push('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
 
 document.getElementById('es14').innerHTML = prova14;
 
@@ -201,7 +200,7 @@ document.getElementById('es14').innerHTML = prova14;
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-prova14.splice (9, 1,'100');
+prova14.splice(9, 1, '100');
 document.getElementById('es15').innerHTML = prova14;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
