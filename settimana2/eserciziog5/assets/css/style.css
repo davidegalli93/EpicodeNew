@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(/assets/images/digits-7708860_960_720.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body h1{
+color: white;
+background-color: black;
+
+}
+
+#calcolatrice {
+  width: auto;
+  height: 100%;
+  padding: 20px 10px;
+  border: 1px solid rgb(99, 255, 68);
+  border-radius: 6px;
+  border-bottom: margin 20px;
+  display: inline-block;
+}
+
+.tasto {
+  background-color: lightblue;
+  color: black;
+  font-size: 22pt;
+  border: none;
+  margin: 4px 2px;
+  height: 40px;
+  width: 46px;
+  border-radius: 5px;
+  box-shadow: -2px 5px green;
+}
+
+.tasto:hover{
+  color: white;
+  background-color:black;
+}
+
+.display {
+  background: none;
+  color: #175c97;
+  font-size: 24pt;
+  border: #175c97 solid 2px;
+  margin: 4px 2px;
+  width: 204px;
+  height: 40px;
+}
+
+.uguale {
+  width: 208px;
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+#operazioni{
+  background-color: white;
+  color: black;
+}
