@@ -256,7 +256,7 @@ function isTodayMyBirthday() {
   }
   else return false;
 }
-console.log(isTodayMyBirthday('July 10'));
+console.log(isTodayMyBirthday('July 11'));
 
 
 // Arrays & Oggetti

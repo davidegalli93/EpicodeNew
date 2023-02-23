@@ -7,35 +7,100 @@
 var valore = 'franco';
 var valore1 = 'sara';
 
-function es1() {
+function es1(valore, valore1) {
   return valore.concat(valore1);
 }
 
-console.log(es1);
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
  */
 
+const dispari = [];
+function es2() {
+  for (let i = 0; i < 100; i++) {
+    if (i % 2 !== 0) {
+      dispari.push(i);
+    }
+  }
+}
+es2();
+console.log(dispari);
+
+
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+const multipli = [];
+function es3() {
+  for (let i = 0; i < 100; i++) {
+    if (i % 5 == 0) {
+      multipli.push(i);
+    }
+  }
+}
+es3();
+console.log(multipli);
+
+
+
 /* ESERCIZIO 4
-  Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
+  Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore 
+  random compreso tra 0 e 100 (incluso).
  */
+
+const random4 = [];
+function es4() {
+  for (let i = 0; i < 10; i++) {
+    random4.push(Math.ceil(Math.random() * 100))
+  }
+}
+es4();
+console.log(random4);
+
 
 /* ESERCIZIO 5
-  Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
+  Scrivi una funzione per ricavare solamente i valori PARI da un 
+  array composto da soli valori numerici.
  */
 
+const pari = [1, 2, 4, 5, 6, 7, 73, 3];
+const es5 = [];
+
+function npari() {
+  for (let i = 0; i < pari.length; i++) {
+    if (i % 2 == 0) {
+      es5.push(i);
+    }
+  }
+}
+npari();
+
+console.log(es5);
+
+
 /* ESERCIZIO 6
-  Scrivi una funzione per sommare a catena i numeri contenuti in un array.
+  Scrivi una funzione per sommare a catena i numeri contenuti 
+  in un array.
  */
+
+  var somma = 0;
+  function somma1 (){
+     pari.forEach(element => {
+      somma += element;
+     });
+  }
+
+  somma1();
+  console.log(somma)
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
+
+const map1 = pari.map(numero++);
+console.log(map1);
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
