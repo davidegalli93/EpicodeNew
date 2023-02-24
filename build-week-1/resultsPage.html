@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results page</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/img/epicode_logo.png" alt="logo">
+    </header>
+
+    <div class="container" id="resultsbody">
+        <h2>Results</h2>
+        <p>The summary of your answers:</p>
+
+        <div id="grupporisultato">
+            <div class="risultato" id="gruppo1">
+                <h2>Correct</h2>
+                <h2 id="correct"></h2>
+                <p id="pCorrette"></p>
+            </div>
+
+            <!-- <svg viewBox="0 0 100 100" width="540" height="540">
+                
+                <circle cx="50" cy="50" r="30" stroke="#00FFFF" stroke-width="10" fill="none" />
+                <circle class="progress-ring__circle" cx="50" cy="50" r="30" stroke="#d20094" stroke-width="10"
+                    fill="none" />
+                    
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="testPerc">0%</text>
+            </svg> -->
+
+            <div class="canvas-wrap">
+                
+                <canvas id="canvas" width="500px" height="500px"></canvas>
+                <!-- <span id="procent"></span> -->
+            </div>
+
+            <div class="risultato" id="gruppo2">
+                <h2>Wrong</h2>
+                <h2 id="wrong"></h2>
+                <p id="pErrate"></p>
+            </div>
+        </div>
+    
+        <p id="esito"></p>
+
+        <a id="footerFixed" href="feedbackPage.html"><button class="buttonBianco">RATE US</button></a>
+    </div>
+
+   
+
+    <script src="/assets/js/resultsPageScript.js"></script>
+
+    </div>
+
+</body>
+
+</html>
