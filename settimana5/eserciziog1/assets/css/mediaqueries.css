@@ -1,0 +1,75 @@
+@media screen and (min-width: 576px) {
+    html{
+        font-size: medium;
+    }
+    table{
+        text-align: center;
+        margin: 5rem auto;
+        font-size: small;
+    }
+    footer {
+        font-size: small;
+    }
+    aside {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header div,
+    header div p,
+    nav{
+        display: inline-block;
+    }
+
+    header div {
+        width: 60%;
+        text-align: left;
+    }
+    header{
+        padding: 0;
+    }
+
+    nav {
+        text-align: right;
+        width: 35%;
+        vertical-align: middle;
+    }
+
+    header nav ul{
+        margin: 0;
+    }
+
+    header div img,
+    header div p{
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    iframe, section {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        margin: 1rem 0;
+    }
+
+iframe{
+    height: 100%;
+}
+
+    section{
+        border-radius: 20px;
+    }
+
+    aside div{
+        display: inline-block;
+        width: 33%;
+    }
+}
+
+@media print{
+    header, iframe, section, aside, footer{
+        display:none;
+    }
+  }
