@@ -99,7 +99,7 @@ console.log(es5);
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
 
-const map1 = pari.map(numero++);
+const map1 = pari.map(i => i + 1);
 console.log(map1);
 
 /* ESERCIZIO 8
@@ -107,9 +107,29 @@ console.log(map1);
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const es8 = ["EPICODE", "is", "great"];
+var es81 = [];
+
+function e8888() {
+for (let i = 0; i < es8.length; i++) {
+  const element.push= es81[i];
+  result.push(arr[i].length)
+  console.log()
+}
+}
+
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
+
+function es9 () {
+  if (pari[i] % 2 == 0) {
+    
+  } else {
+    
+  }
+}
+
 
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
