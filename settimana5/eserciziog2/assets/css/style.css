@@ -20,7 +20,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -30,6 +34,7 @@ header {
   padding: 2em 1.5em;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 @media screen and (min-width: 800px) {
@@ -122,21 +127,20 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
-#title1{
+#title1 {
   position: relative;
 }
-.underline{
+.underline {
   position: absolute;
   width: 45%;
   height: 70px;
   top: 50%;
   left: 40%;
-  
 }
 
-@media screen and (min-width: 380px) and (max-width: 576px){
-  .underline{
-width: 10%;
+@media screen and (min-width: 380px) and (max-width: 576px) {
+  .underline {
+    width: 10%;
   }
 }
 
@@ -355,7 +359,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
@@ -413,33 +421,68 @@ footer a {
   }
 }
 
-.fa-calendar{
+#btn1 {
+  background-color: white;
+  border: 2px solid white;
+  position: fixed;
+  top: 88%;
+  left: 92%;
+  opacity: 0.5;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
 
+#btn2 {
+  background-color: white;
+  border: 2px solid white;
+  position: fixed;
+  top: 16%;
+  left: 92%;
+  opacity: 0.5;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+#btn3 {
+  background-color: white;
+  border: 2px solid white;
+  position: fixed;
+  top: 28%;
+  left: 92%;
+  opacity: 0.5;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+button a {
+  font-size: 40px;
+}
+
+.fa-arrow-up {
+  color: violet;
+}
+
+.fa-plus-square {
   color: blue;
-  position:absolute;
-
-  margin: 0 auto;
-  top: 16px;
-  left: 20px;
-
 }
 
-.fa-plus-square{
-
-color: blue;
-position:absolute;
-
-margin: 0 auto;
-top: 16px;
-left: 20px;
-
+.fa-calendar {
+  color: blue;
 }
 
-.fa-arrow-up{
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  #btn2 {
+    top: 72%;
+  }
+  #btn3 {
+    top: 80%;
+  }
+}
 
-position:absolute;
+aside div {
+  position: relative;
+}
 
-margin: 0 auto;
-top: 16px;
-left: 20px;
+.fa-tag {
+  position: absolute;
+  right: 2px;
+  top: 5px;
+  font-size: 4rem;
 }
