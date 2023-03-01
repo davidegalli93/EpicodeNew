@@ -27,55 +27,66 @@ body {
 .productCard button {
   background-color: #f3df85;
   border-radius: 20px;
-  height: 40px;
-  width: 180px;
   font-size: 15px;
 }
 
 .buttonCard {
   display: flex;
-  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -5%;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 90%;
+  height: 250px;
+  background-color: rgb(235, 219, 197);
+  border-radius: 80px;
+  align-items: center;
+  padding: 20px;
 }
 
-nav ul li {
-  margin: 0.5em;
-  border: 1px solid #742305;
-  padding: 10px 30px;
-  border-radius: 20px;
-  width: 90px;
-  text-align: center;
-}
-
-nav {
-  background-color: #fbf7e3;
-  padding: 1em;
-  height: 300px;
-}
-
-.btnNav {
+button {
+  border: none;
+  background-color: burlywood;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 50px;
   flex-grow: 1;
+  width: 40%;
+  color: brown;
+  margin: 5px;
 }
 
-.btnBig {
-  flex-grow: 5;
+.btngrande {
+  display: flex;
+  flex-grow: 2;
+  height: 60px;
+  height: 100px;
+  width: 80%;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btngrande img {
+  width: 50px;
+  height: 50px;
 }
 
 .flexibleArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border: 1px black;
   background-color: #fbf7e3;
   width: 80%;
-  height: 600px;
+  height: 500px;
   margin: 20px;
-  padding: 10px 20px;
+  padding: 20px 10px;
   border-radius: 60px;
   overflow: hidden;
   color: brown;
@@ -85,4 +96,9 @@ nav {
 .flexibleArticle img {
   width: 300px;
   height: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
