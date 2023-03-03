@@ -158,6 +158,7 @@ h1 {
 
 .secondiArticoli {
   display: flex;
+  justify-content: space-between;
   height: 160px;
   width: 90%;
   margin-bottom: 20px;
@@ -180,6 +181,10 @@ h3 {
 
 .bookmark {
   float: right;
+}
+
+.secondiTesti div {
+  margin-bottom: 8px;
 }
 
 /*parte destra*/
