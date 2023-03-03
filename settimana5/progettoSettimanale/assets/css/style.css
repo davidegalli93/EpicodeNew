@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+html body {
+  font-family: "Spectral", serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 8rem;
+}
+
+/*nav*/
+
+nav,
+main {
+  background-color: #ffc017;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+nav img {
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+main {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+main article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 450px;
+}
+
+.title1 {
+  padding-left: 8rem;
+  height: 70%;
+}
+
+h1 {
+  font-size: 70px;
+  padding: 30px 0;
+}
+
+.title1 p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.title1 button {
+  width: 200px;
+  font-size: medium;
+}
+
+/*Prima parte*/
+
+.primaSezione {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.primiArticoli {
+  width: 250px;
+  height: 150px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgsmall {
+  width: 30px;
+  border-radius: 20px;
+}
+
+.testoArticoli {
+  display: flex;
+  flex-direction: column;
+}
+
+.testoArticoli div {
+  height: 40%;
+}
+
+.testoArticoli div :first-child {
+  font-size: 14px;
+}
+
+.autore {
+  display: flex;
+  align-items: center;
+  font-size: 16pxpx;
+  font-weight: bold;
+}
+
+.numero {
+  font-size: 40px;
+  color: grey;
+  font-weight: 400;
+  margin-right: 20px;
+  position: relative;
+}
+
+/*secondi articoli*/
+
+.secondaParte {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+}
+
+.imbbig {
+  width: 200px;
+  height: auto;
+}
+
+.secondiArticoli {
+  display: flex;
+  height: 160px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.parteSinistra {
+  width: 75%;
+}
+
+.categoria {
+  background-color: lightgrey;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookmark {
+  float: right;
+}
+
+/*parte destra*/
+
+.parteDestra {
+  width: 30%;
+}
+
+.interessi {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interessi div {
+  border: 1px solid lightgrey;
+  color: grey;
+  font-size: 10px;
+  padding: 4px;
+  margin: 2px;
+}
+
+.pagineSito ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagineSito ul li {
+  list-style-type: none;
+  margin: 2px;
+  color: grey;
+  font-size: 10px;
+}
+
+.svgtesto {
+  display: flex;
+  align-items: center;
+}
