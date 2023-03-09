@@ -1,0 +1,25 @@
+@mixin bottoni ($bgcolor) {
+    width: 100px;
+    height: 20px;
+    color: black;
+    background-color: $bgcolor;
+    border-radius: 20px;
+}
+
+
+.button1{
+    @include bottoni (#0e6cff);
+}
+
+.button2{
+    @include bottoni (#ff8700);
+}
+
+.button3{
+    @include bottoni (#4caf50);
+}
+
+
+.gruppoPulsanti{
+    display: flex;
+}

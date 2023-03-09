@@ -99,7 +99,7 @@ function addCar(brand, model, color, licensePlate, trims) {
     return cars.length
 }
 
-const newLength = addCar("Volkswagen", "Golf", "black", "FE543ER", 'life', 'style', 'r-line');
+const newLength = addCar("Volkswagen", "Golf", "black", "FE543ER", ['life', 'style', 'r-line']);
 console.log(cars);
 console.log(newLength);
 
@@ -109,8 +109,17 @@ console.log(newLength);
      nel nuovo array "justFirstTrims", sotto definito.
 */
 
+let justFirstTrims = [];
 
 // inserisci la tua funzione qui
+
+for (let i = 0; i < cars.length; i++) {
+    justFirstTrims.push(cars[i].trims[0])
+};
+
+console.log(justFirstTrims);
+
+
 
 /* ESERCIZIO 10
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console.
@@ -119,8 +128,8 @@ console.log(newLength);
 */
 
 for (let i = 0; i < cars.length; i++) {
-    const car = cars[i];  // iterare attraverso l'array "cars"
-    if (car.color.length <= 4) { // controllo la lunghezza della proprietà "color"
+    const car = cars[i];
+    if (car.color.length <= 4) {
         console.log('Fizz');
     } else {
         console.log('Buzz');
@@ -143,6 +152,11 @@ console.log(filteredCars);
     stringhe formate nel seguente modo: "Ford Fiesta", "Peugeot 208" etc.
 */
 
+let es12 = cars.map((car) => {
+    return `$cars.brand $cars.model`
+});
+
+console.log(es12)
 
 
 /* ESERCIZIO 13
