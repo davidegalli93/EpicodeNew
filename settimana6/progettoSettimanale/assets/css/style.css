@@ -1,0 +1,17 @@
+.buttonProfile {
+  background-color: transparent;
+  color: lightgray;
+  border: 1px solid lightgray;
+  width: 10rem;
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+footer a {
+  margin-right: 20px;
+}
+
+
