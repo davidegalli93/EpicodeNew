@@ -14,4 +14,10 @@ footer a {
   margin-right: 20px;
 }
 
+.film:hover {
+  transform: rotate(0deg) scale(1.2, 1.2);
+}
 
+.film {
+  transition: transform 1s;
+}
