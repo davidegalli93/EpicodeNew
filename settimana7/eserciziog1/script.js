@@ -35,15 +35,17 @@ class Pet {
             this.breed = breed
     }
     stessoPadrone(pet2) {
-        if (this.ownerName == pet2.ownerName) {
-            console.log(this.petName + ' è lo stesso padrone di ' + persona2.petName)
-        } else {
-            console.log('Non è lo stesso padrone')
-        }
+        return this.ownerName === pet2.ownerName
     }
 }
 
+const pet1 = new Pet('gigi', 'pippi', 'dog', 'labrador')
+const pet2 = new Pet('sergio', 'treee', 'dog', 'cocker')
+
+pet1.stessoPadrone(pet2)
+
 let aggiungiAnimale = () => {
+    puntoLista.innerHTML = ' '
     listaAnimali.forEach((Pet) => {
         let nuovoPuntoElenco = document.createElement('li')
         nuovoPuntoElenco.innerHTML = Pet.petName + ' ' + Pet.ownerName + ' ' + Pet.species + ' ' + Pet.breed
