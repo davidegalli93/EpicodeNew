@@ -27,5 +27,3 @@ let timer = setInterval(() => {
     document.getElementById("conta").innerHTML = ++conteggio
     sessionStorage.setItem('tempoPassato', conteggio)
 }, 1000)
-
-
