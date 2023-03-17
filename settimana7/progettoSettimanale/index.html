@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>CRUDAZON</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.3/examples/album/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background-color: #fff;
+      }
+
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+      }
+
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-weight: 300;
+      }
+
+      .jumbotron .container {
+        max-width: 40rem;
+      }
+
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: 0.25rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CRUDAZON</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./backOffice.html">Backoffice</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Album API example</h1>
+          <p class="lead text-muted">
+            This page will dynamically load pictures from the web, and display
+            them in a cool way!
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" id="corpoDellaColonna"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          Album example is &copy; Bootstrap, but please download and customize
+          it for yourself!
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let prendiCard = document.getElementById("corpoDellaColonna");
+
+      const inserisciFoto = function (product) {
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("d-flex", "flex-wrap");
+        newDiv.innerHTML = `<div class="card mb-4 shadow-sm">
+    <img src="${product.imageUrl}" alt="foto">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="#55595c" />
+      <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+        Thumbnail
+      </text>
+    </svg>
+    <div class="card-body">
+      <h5 class="card-title">${product.name}</h5>
+      <p class="card-text">
+        ${product.brand}${product.description}${product.price}
+      </p>
+      <div
+        class="d-flex justify-content-between align-items-center"
+      >
+      <a href="./backoffice.html?eventId=${product._id}" class="btn btn-info">MODIFICA</a>
+    </div>
+  </div>`;
+        prendiCard.appendChild(newDiv);
+      };
+
+      const PRODOTTI_URL =
+        "https://striveschool-api.herokuapp.com/api/product/";
+
+      const nuovoProdotto = function () {
+        fetch(PRODOTTI_URL, {
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0NjlhM2Y4MWI0MjAwMTM5YjJhOTQiLCJpYXQiOjE2NzkwNTkzNjQsImV4cCI6MTY4MDI2ODk2NH0.ASyJ0NwQPZDxNi3Bkqted9lpgOgI6UBDm6s8ss7p864",
+          },
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            data
+              .forEach((product) => {
+                inserisciFoto(product);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          });
+      };
+      nuovoProdotto();
+    </script>
+  </body>
+</html>
